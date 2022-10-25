@@ -16,12 +16,10 @@ Here is source code for the [frontend application](https://github.com/badass-tec
 
 - Create a user account
 - Activate your account via email
-- Login to your account
 - Change your password or delete your account
-- Create a forum, post, comment
+- Create (POST) a forum, post, comment
 - Like a post
-- View all posts, posts in a forum, posts by user
-- View all forums
-- View all comments on a post, comments by user
-- Edit and delete your posts, comments, and forums
-- Logout
+- View (GET) all posts, posts in a forum, posts by user
+- View (GET) all forums
+- View (GET) all comments on a post, comments by user
+- Edit (PUT) and delete (DELETE) your posts, comments, and forums
