@@ -1,0 +1,33 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port: 8080
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/sociorama'
+    username: 'postgres'
+    password: '0000'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  mail:
+    host: 'smtp.mailtrap.io'
+    port: 2525
+    username: 'e3892edd5bbeff'
+    password: '91e6276343d9cc'
+    protocol: 'smtp'
+
+springdoc:
+  api-docs:
+    version: openapi_3_0
+    path: '/api-docs'
+  swagger-ui:
+      enabled: true
+      path: '/swagger-ui.html'
